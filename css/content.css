@@ -1,0 +1,142 @@
+.content a {
+    color: #0081c1;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.content h2,
+.content h3,
+.content h4 {
+    font-family: roboto;
+    font-weight: 600;
+}
+
+.content h2 {
+    font-size: 26px;
+    margin: 32px 0 15px;
+    letter-spacing: -.015em;
+}
+
+.content h3 {
+    font-family: lato;
+    font-size: 23px;
+    margin-top: 29px;
+    margin-bottom: 13px;
+    letter-spacing: -.02em;
+}
+
+.content h4 {
+    font-family: lato;
+    font-size: 18px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+
+.content p {
+    font-family: lato;
+    font-size: 18px;
+    line-height: 1.500em;
+    margin-bottom: 16px;
+    color: #000;
+}
+.content span {
+    font-family: lato;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 13px;
+    margin-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.content table {
+    font-family: lato;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.content th {
+    padding: 16px 0 15px 31px;
+    border-bottom: 3px solid #ffbd21;
+    background: #f8f8f8;
+}
+
+.content td {
+    padding: 16px 0 17px 31px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content ol {
+    counter-reset: li;
+    list-style: none;
+}
+
+.content ol li {
+    font-family: lato;
+    font-size: 18px;
+    position: relative;
+    padding-top: 6px;
+    padding-left: 6px;
+    margin-bottom: 12px;
+    margin-left: 32px;
+}
+
+.content ol li::before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: 7px;
+    left: -30px;
+    width: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+    z-index: 1;
+}
+
+.content ul li {
+    font-family: lato;
+    font-size: 18px;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.content ul li::before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    width: 12px;
+    height: 8px;
+    content: '';
+    background: url('../img/content-list-decor.png') 50% no-repeat;
+}
+
+@media only screen and (max-width: 725px) {
+    .content p {
+        font-size: 16px;
+    }
+
+    .content th {
+        padding: 15px 0;
+    }
+
+    .content td {
+        padding: 6px 12px;
+    }
+
+    .content th {
+        padding-left: 6px;
+    }
+}
